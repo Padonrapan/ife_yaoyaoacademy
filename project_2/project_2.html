@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project_2</title>
+    <style>
+        form{
+            width:600px;
+            margin:100px auto;
+        }
+        table td{
+            padding:10px;
+        }
+        input {
+            width: 300px;
+            height: 30px;
+        }
+        .visible{
+            display: table-row;
+        }
+        .right{
+            color: green;
+            display: table-row;
+        }
+        .wrong{
+            color: red;
+            display: table-row;
+        }
+        .hint{
+            display: none;
+        }
+        label{
+            display: block;
+            width: 100%;
+            font-weight: bold;
+            text-align: right;
+        }
+        button{
+            width: 50px;
+            height: 30px;
+            color:white;
+            background-color: #015dd1;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label>名称</label></td>
+                <td><input type="text" id="t1"/></td>
+            </tr>
+            <tr class="hint" id="h1">
+                <td></td>
+                <td id="c1">必填，长度为4~16位字符</td>
+            </tr>
+
+            <tr>
+                <td><label>密码</label></td>
+                <td><input type="password" id="t2"/></td>
+            </tr>
+            <tr class="hint" id="h2">
+                <td></td>
+                <td id="c2">必填，长度为4~16位字符,包含字母和数字</td>
+            </tr>
+
+            <tr>
+                <td><label>确认密码</label></td>
+                <td><input type="password" id="t3"/></td>
+            </tr>
+            <tr class="hint" id="h3">
+                <td></td>
+                <td id="c3">必填，必须与密码相同</td>
+            </tr>
+
+            <tr>
+                <td><label>邮箱</label></td>
+                <td><input type="text" id="t4"/></td>
+            </tr>
+            <tr class="hint" id="h4">
+                <td></td>
+                <td id="c4">填写正确的邮箱格式</td>
+            </tr>
+
+            <tr>
+                <td><label>手机</label></td>
+                <td><input type="text" id="t5"/></td>
+            </tr>
+            <tr class="hint" id="h5">
+                <td></td>
+                <td id="c5">填写正确的手机号码</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><button id="submit">提交</button></td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" src="main.js">
+    </script>
+</body>
+</html>
